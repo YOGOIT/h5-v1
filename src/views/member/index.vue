@@ -87,6 +87,27 @@
           <div
             class="grid-item"
             v-if="isLogin"
+            @click="$router.push({ name: 'Zhengshus' })"
+          >
+            <div class="icon">
+              <div class="icon-img">
+                <img src="../../assets/img/icon-message@2x.png" />
+              </div>
+            </div>
+            <div class="name">我的证书</div>
+          </div>
+          <div class="grid-item" v-else @click="goLogin">
+            <div class="icon">
+              <div class="icon-img">
+                <img src="../../assets/img/icon-message@2x.png" />
+              </div>
+            </div>
+            <div class="name">我的证书</div>
+          </div>
+
+          <div
+            class="grid-item"
+            v-if="isLogin"
             @click="$router.push({ name: 'Messages' })"
           >
             <div class="icon">

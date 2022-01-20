@@ -104,6 +104,16 @@ const routes = [
 
   },
   {
+    path: '/zhengshus',
+    name: 'Zhengshus',
+    meta: {
+      title: '我的证书',
+      auth: true,
+    },
+    component: () => import('../views/member/zhengshu.vue'),
+
+  },
+  {
     path: '/vod/detail',
     name: 'VodDetail',
     meta: {

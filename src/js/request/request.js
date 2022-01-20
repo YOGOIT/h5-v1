@@ -1,5 +1,6 @@
 import {
     get,
+    get2,
     post,
     destroy,
     put
@@ -164,6 +165,9 @@ const Api = {
         },
         Messages(params) {
             return get('/api/v2/member/messages', params);
+        },
+        Zhengshus(params) {
+            return get2('/api/user_zhengshu', params);
         },
         ReadMessage(id) {
             return get('/api/v2/member/notificationMarkAsRead/' + id);
